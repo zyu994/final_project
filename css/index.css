@@ -11,21 +11,19 @@ a.skip-link {
     position: absolute;
     top: -40px;
     left: 0;
-    background-color: #B9A590;
-    color: #F6F3EC;
+    background-color: #F6F3EC;
+    color: #36302A;
     padding: 10px 15px;
     text-decoration: none;
     font-size: 16px;
-    z-index: 1;
+    z-index: 1000;
 }
 
 /* Make the link visible on focus */
 a.skip-link:focus {
-    top: 10px; /* Moves the link into view */
-    outline: 2px solid #8B4513; /* Highlight for accessibility */
+    top: 10px;
+    opacity: 1;
 }
-
-
 
 .navbar {
     display: flex;
@@ -36,7 +34,6 @@ a.skip-link:focus {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -242,6 +239,10 @@ a.skip-link:focus {
     font-size: 14px;
 }
 
+.flip-card:hover .flip-card-inner{
+    transform: rotateY(180deg);
+}
+
 .footer {
     width: 90%;
     margin: 0 auto;
@@ -251,11 +252,7 @@ a.skip-link:focus {
 }
 
 .footer-text {
-    /* color: #fff; */
     font-size: 0.8em;
     line-height: 40px;
     text-indent: 1.6em;
-    /* position: absolute;
-    bottom: 10px;
-    left: 10px; */
 }

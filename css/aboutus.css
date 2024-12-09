@@ -6,6 +6,24 @@ body {
     color: #36302A;
 }
 
+a.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: #F6F3EC;
+    color: #36302A;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 16px;
+    z-index: 1000;
+}
+
+/* Make the link visible on focus */
+a.skip-link:focus {
+    top: 10px;
+    opacity: 1;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -15,7 +33,6 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
