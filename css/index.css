@@ -1,0 +1,261 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F6F3EC;
+    color: #36302A;
+}
+
+
+a.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: #B9A590;
+    color: #F6F3EC;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 16px;
+    z-index: 1;
+}
+
+/* Make the link visible on focus */
+a.skip-link:focus {
+    top: 10px; /* Moves the link into view */
+    outline: 2px solid #8B4513; /* Highlight for accessibility */
+}
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    background-color: #574C3F;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar img {
+    height: 40px;
+}
+
+.navbar ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ol li {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.navbar ol li a {
+    text-decoration: none;
+    color: #F6F3EC;
+    transition: color 0.3s;
+}
+
+.navbar ol li a:hover,
+.navbar ol li a.visited {
+    color: #B9A590;
+}
+
+.product-description,
+.productDescription,
+.multipleProductDescriptions,
+.flipUpImage {
+    width: 80%;
+    max-width: 1000px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background-color: #ECE4DA;
+    border-radius: 8px;
+}
+
+.productDescription {
+    display: flex;
+    margin: 20px auto 20px auto;
+}
+
+.product-description {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px auto 20px auto;
+}
+
+.multipleProductDescriptions {
+    margin: 20px auto 20px auto;
+}
+
+.product-image {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    max-height: 200px;
+}
+
+.product-text {
+    width: 70%;
+    font-size: 17px;
+}
+
+.product-text h1{
+    margin: 0 0 10px;
+    font-size: 28px;
+    text-align: center;
+    color: #574C3F;
+}
+
+.productDescription div {
+    flex: 1;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.productDescription img {
+    width: 150px;
+    height: 210px;
+    border-radius: 5px;
+}
+
+.multipleProductDescriptions {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.multipleProductDescriptions-div {
+    width: 44%;
+    margin: 1%;
+    padding: 10px;
+    display: flex;
+    border: 0.3px solid #B9A590;
+    border-radius: 5px;
+}
+
+.multipleProductDescriptions-img {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.multipleProductDescriptions-img img {
+    width: 100%;
+    height: auto;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.multipleProductDescriptions-text {
+    width: 60%;
+    padding-left: 10px;
+}
+
+.multipleProductDescriptions-text p {
+    font-size: 16px;
+}
+
+.flipUpImage {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 460px;
+    max-width: 1000px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    background-color: #ECE4DA;
+    margin: 20px auto 20px auto;
+    border-radius: 5px;
+}
+
+.flip-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.flip-card {
+    perspective: 1000px;
+    width: 160px;
+    margin: 1%;
+    cursor: pointer;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner,
+.flip-card:focus .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front img,
+.flip-card-back img {
+    width: 100%;
+    height: 220px;
+}
+
+.flip-card-back {
+    background-color: #ECE4DA;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.flip-card-back p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.footer {
+    width: 90%;
+    margin: 0 auto;
+    height: 40px;
+    text-align: left;
+    position: relative;
+}
+
+.footer-text {
+    /* color: #fff; */
+    font-size: 0.8em;
+    line-height: 40px;
+    text-indent: 1.6em;
+    /* position: absolute;
+    bottom: 10px;
+    left: 10px; */
+}
